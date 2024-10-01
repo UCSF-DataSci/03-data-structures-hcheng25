@@ -43,7 +43,7 @@ def find_greatest_product(number_string, adjacent_digits=13):
     digit_count = 0
     
     # while the position of the end of the current slice is within the bounds of the number
-    while digit_count+adjacent_digits < len(number_string):
+    while digit_count+adjacent_digits < len(number_string)+1:
         # get slice to inspect and convert to list
         sum_check = number_string[digit_count:digit_count+adjacent_digits]
         # reset the temporary sum
